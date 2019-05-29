@@ -9,8 +9,6 @@
 import UIKit
 
 @objc public protocol MLStackControllerDelegate: class {
-    
-    @objc optional func didDismissStorkBySwipe()
-    
-    @objc optional func didDismissStorkByTap()
+    @objc optional func didDismissStackBySwipe()
+    @objc optional func didDismissStackByTap()
 }

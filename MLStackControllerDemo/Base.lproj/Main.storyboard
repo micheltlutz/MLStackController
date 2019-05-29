@@ -18,20 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZR-X5-2Qn">
-                                <rect key="frame" x="120" y="198" width="174" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZR-X5-2Qn">
+                                <rect key="frame" x="120" y="207" width="174" height="45"/>
                                 <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1iP-QR-Bf0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="174" id="PjF-vx-Gto"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Open Stack Custom"/>
                                 <connections>
                                     <action selector="openStackCustom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKF-43-3Un"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PV-bM-ZHh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PV-bM-ZHh">
                                 <rect key="frame" x="120" y="122" width="174" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="nBJ-jP-g3m"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="174" id="wg1-ef-jN7"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Open Stack"/>
                                 <connections>
@@ -40,6 +46,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4PV-bM-ZHh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="BA2-hd-fuQ"/>
+                            <constraint firstItem="zZR-X5-2Qn" firstAttribute="top" secondItem="4PV-bM-ZHh" secondAttribute="bottom" constant="40" id="HJ6-RK-knX"/>
+                            <constraint firstItem="4PV-bM-ZHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KP7-bb-T4L"/>
+                            <constraint firstItem="zZR-X5-2Qn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UzD-il-ikl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

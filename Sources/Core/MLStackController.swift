@@ -23,7 +23,7 @@ public struct MLStackController {
                     if translation >= presentationController.translateForDismiss * 0.4 {
                         if !scrollView.isTracking && !scrollView.isDragging {
                             presentationController.presentedViewController.dismiss(animated: true, completion: {
-                                presentationController.storkDelegate?.didDismissStorkBySwipe?()
+                                presentationController.stackDelegate?.didDismissStackBySwipe?()
                             })
                             return
                         }

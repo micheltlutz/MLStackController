@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-    public var isPresentedAsStork: Bool {
+    public var isPresentedAsStack: Bool {
         return transitioningDelegate is MLStackTransitionDelegate
             && modalPresentationStyle == .custom
             && presentingViewController != nil

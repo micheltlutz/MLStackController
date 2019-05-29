@@ -30,6 +30,7 @@ final class MLStackPresentingAnimationController: NSObject, UIViewControllerAnim
                 presentedViewController.view.frame = finalFrameForPresentedView
         }, completion: { finished in
             transitionContext.completeTransition(finished)
+            presentedViewController.view.layoutIfNeeded()
         })
     }
     
