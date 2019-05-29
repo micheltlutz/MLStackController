@@ -26,10 +26,40 @@
 		D0852D49229E0BA0008E0C4B /* MLStackCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D48229E0BA0008E0C4B /* MLStackCloseButton.swift */; };
 		D0852D4B229E0BE4008E0C4B /* MLStackCloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D4A229E0BE4008E0C4B /* MLStackCloseView.swift */; };
 		D0852D4D229E0C36008E0C4B /* MLStackIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D4C229E0C36008E0C4B /* MLStackIndicatorView.swift */; };
+		D0852D55229E0EAC008E0C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D54229E0EAC008E0C4B /* AppDelegate.swift */; };
+		D0852D57229E0EAC008E0C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D56229E0EAC008E0C4B /* ViewController.swift */; };
+		D0852D5A229E0EAC008E0C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0852D58229E0EAC008E0C4B /* Main.storyboard */; };
+		D0852D5C229E0EAE008E0C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0852D5B229E0EAE008E0C4B /* Assets.xcassets */; };
+		D0852D5F229E0EAE008E0C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0852D5D229E0EAE008E0C4B /* LaunchScreen.storyboard */; };
+		D0852D6A229E0EAE008E0C4B /* MLStackControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D69229E0EAE008E0C4B /* MLStackControllerDemoTests.swift */; };
+		D0852D75229E0EAE008E0C4B /* MLStackControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D74229E0EAE008E0C4B /* MLStackControllerDemoUITests.swift */; };
+		D0852D80229E0ED7008E0C4B /* MLStackController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* MLStackController.framework */; };
+		D0852D81229E0ED7008E0C4B /* MLStackController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* MLStackController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "MLStackController-iOS";
+		};
+		D0852D66229E0EAE008E0C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0852D51229E0EAB008E0C4B;
+			remoteInfo = MLStackControllerDemo;
+		};
+		D0852D71229E0EAE008E0C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0852D51229E0EAB008E0C4B;
+			remoteInfo = MLStackControllerDemo;
+		};
+		D0852D82229E0ED7008E0C4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
 			proxyType = 1;
@@ -47,6 +77,17 @@
 			files = (
 				35B7422F1F82A5E000829B21 /* Nimble.framework in Embed Frameworks */,
 				35B742301F82A5E000829B21 /* Quick.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0852D84229E0ED7008E0C4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D0852D81229E0ED7008E0C4B /* MLStackController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +122,19 @@
 		D0852D48229E0BA0008E0C4B /* MLStackCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLStackCloseButton.swift; sourceTree = "<group>"; };
 		D0852D4A229E0BE4008E0C4B /* MLStackCloseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLStackCloseView.swift; sourceTree = "<group>"; };
 		D0852D4C229E0C36008E0C4B /* MLStackIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLStackIndicatorView.swift; sourceTree = "<group>"; };
+		D0852D52229E0EAB008E0C4B /* MLStackControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLStackControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0852D54229E0EAC008E0C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0852D56229E0EAC008E0C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0852D59229E0EAC008E0C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0852D5B229E0EAE008E0C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0852D5E229E0EAE008E0C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0852D60229E0EAE008E0C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0852D65229E0EAE008E0C4B /* MLStackControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLStackControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0852D69229E0EAE008E0C4B /* MLStackControllerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLStackControllerDemoTests.swift; sourceTree = "<group>"; };
+		D0852D6B229E0EAE008E0C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0852D70229E0EAE008E0C4B /* MLStackControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLStackControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0852D74229E0EAE008E0C4B /* MLStackControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLStackControllerDemoUITests.swift; sourceTree = "<group>"; };
+		D0852D76229E0EAE008E0C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +155,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0852D4F229E0EAB008E0C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0852D80229E0ED7008E0C4B /* MLStackController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0852D62229E0EAE008E0C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0852D6D229E0EAE008E0C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +186,9 @@
 				353A78F6224F762800055190 /* MLStackController.playground */,
 				3549BB161DA3890B00C63030 /* Sources */,
 				3549BB191DA3890B00C63030 /* Tests */,
+				D0852D53229E0EAB008E0C4B /* MLStackControllerDemo */,
+				D0852D68229E0EAE008E0C4B /* MLStackControllerDemoTests */,
+				D0852D73229E0EAE008E0C4B /* MLStackControllerDemoUITests */,
 				3549BB061DA387DB00C63030 /* Products */,
 				357D954B1DA3F2B400AEC55F /* Frameworks */,
 			);
@@ -120,6 +199,9 @@
 			children = (
 				3549BB211DA389CD00C63030 /* MLStackController.framework */,
 				3549BB611DA38ADB00C63030 /* MLStackControllerTests-iOS.xctest */,
+				D0852D52229E0EAB008E0C4B /* MLStackControllerDemo.app */,
+				D0852D65229E0EAE008E0C4B /* MLStackControllerDemoTests.xctest */,
+				D0852D70229E0EAE008E0C4B /* MLStackControllerDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,14 +209,14 @@
 		3549BB161DA3890B00C63030 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D0852D47229E0B85008E0C4B /* Views */,
-				D0852D3E229E0857008E0C4B /* Extension */,
-				D0852D3B229E07B1008E0C4B /* Drawnner */,
-				D0852D38229E0674008E0C4B /* Protocols */,
-				D0852D35229E060D008E0C4B /* TransitionsDelegate */,
-				D0852D32229E0579008E0C4B /* Models */,
 				359649011FB18CBF00FC7ADC /* Core */,
+				D0852D3B229E07B1008E0C4B /* Drawnner */,
+				D0852D3E229E0857008E0C4B /* Extension */,
+				D0852D32229E0579008E0C4B /* Models */,
+				D0852D38229E0674008E0C4B /* Protocols */,
 				3549BB541DA38A4000C63030 /* Supporting Files */,
+				D0852D35229E060D008E0C4B /* TransitionsDelegate */,
+				D0852D47229E0B85008E0C4B /* Views */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -241,6 +323,37 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D0852D53229E0EAB008E0C4B /* MLStackControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0852D54229E0EAC008E0C4B /* AppDelegate.swift */,
+				D0852D56229E0EAC008E0C4B /* ViewController.swift */,
+				D0852D58229E0EAC008E0C4B /* Main.storyboard */,
+				D0852D5B229E0EAE008E0C4B /* Assets.xcassets */,
+				D0852D5D229E0EAE008E0C4B /* LaunchScreen.storyboard */,
+				D0852D60229E0EAE008E0C4B /* Info.plist */,
+			);
+			path = MLStackControllerDemo;
+			sourceTree = "<group>";
+		};
+		D0852D68229E0EAE008E0C4B /* MLStackControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0852D69229E0EAE008E0C4B /* MLStackControllerDemoTests.swift */,
+				D0852D6B229E0EAE008E0C4B /* Info.plist */,
+			);
+			path = MLStackControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		D0852D73229E0EAE008E0C4B /* MLStackControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0852D74229E0EAE008E0C4B /* MLStackControllerDemoUITests.swift */,
+				D0852D76229E0EAE008E0C4B /* Info.plist */,
+			);
+			path = MLStackControllerDemoUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -292,18 +405,74 @@
 			productReference = 3549BB611DA38ADB00C63030 /* MLStackControllerTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D0852D51229E0EAB008E0C4B /* MLStackControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0852D77229E0EAE008E0C4B /* Build configuration list for PBXNativeTarget "MLStackControllerDemo" */;
+			buildPhases = (
+				D0852D4E229E0EAB008E0C4B /* Sources */,
+				D0852D4F229E0EAB008E0C4B /* Frameworks */,
+				D0852D50229E0EAB008E0C4B /* Resources */,
+				D0852D84229E0ED7008E0C4B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0852D83229E0ED7008E0C4B /* PBXTargetDependency */,
+			);
+			name = MLStackControllerDemo;
+			productName = MLStackControllerDemo;
+			productReference = D0852D52229E0EAB008E0C4B /* MLStackControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0852D64229E0EAE008E0C4B /* MLStackControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0852D7A229E0EAE008E0C4B /* Build configuration list for PBXNativeTarget "MLStackControllerDemoTests" */;
+			buildPhases = (
+				D0852D61229E0EAE008E0C4B /* Sources */,
+				D0852D62229E0EAE008E0C4B /* Frameworks */,
+				D0852D63229E0EAE008E0C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0852D67229E0EAE008E0C4B /* PBXTargetDependency */,
+			);
+			name = MLStackControllerDemoTests;
+			productName = MLStackControllerDemoTests;
+			productReference = D0852D65229E0EAE008E0C4B /* MLStackControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0852D6F229E0EAE008E0C4B /* MLStackControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0852D7D229E0EAE008E0C4B /* Build configuration list for PBXNativeTarget "MLStackControllerDemoUITests" */;
+			buildPhases = (
+				D0852D6C229E0EAE008E0C4B /* Sources */,
+				D0852D6D229E0EAE008E0C4B /* Frameworks */,
+				D0852D6E229E0EAE008E0C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0852D72229E0EAE008E0C4B /* PBXTargetDependency */,
+			);
+			name = MLStackControllerDemoUITests;
+			productName = MLStackControllerDemoUITests;
+			productReference = D0852D70229E0EAE008E0C4B /* MLStackControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3549BAFC1DA387DB00C63030 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = micheltlutz;
 				TargetAttributes = {
 					3549BB201DA389CD00C63030 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 25RYDD756Z;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -311,6 +480,23 @@
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
+					};
+					D0852D51229E0EAB008E0C4B = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = 25RYDD756Z;
+						ProvisioningStyle = Automatic;
+					};
+					D0852D64229E0EAE008E0C4B = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = 25RYDD756Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D0852D51229E0EAB008E0C4B;
+					};
+					D0852D6F229E0EAE008E0C4B = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = 25RYDD756Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D0852D51229E0EAB008E0C4B;
 					};
 				};
 			};
@@ -329,6 +515,9 @@
 			targets = (
 				3549BB201DA389CD00C63030 /* MLStackController-iOS */,
 				3549BB601DA38ADB00C63030 /* MLStackControllerTests-iOS */,
+				D0852D51229E0EAB008E0C4B /* MLStackControllerDemo */,
+				D0852D64229E0EAE008E0C4B /* MLStackControllerDemoTests */,
+				D0852D6F229E0EAE008E0C4B /* MLStackControllerDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,6 +531,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3549BB5F1DA38ADB00C63030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0852D50229E0EAB008E0C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0852D5F229E0EAE008E0C4B /* LaunchScreen.storyboard in Resources */,
+				D0852D5C229E0EAE008E0C4B /* Assets.xcassets in Resources */,
+				D0852D5A229E0EAC008E0C4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0852D63229E0EAE008E0C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0852D6E229E0EAE008E0C4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,6 +591,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0852D4E229E0EAB008E0C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0852D57229E0EAC008E0C4B /* ViewController.swift in Sources */,
+				D0852D55229E0EAC008E0C4B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0852D61229E0EAE008E0C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0852D6A229E0EAE008E0C4B /* MLStackControllerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0852D6C229E0EAE008E0C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0852D75229E0EAE008E0C4B /* MLStackControllerDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -386,7 +624,41 @@
 			target = 3549BB201DA389CD00C63030 /* MLStackController-iOS */;
 			targetProxy = 3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */;
 		};
+		D0852D67229E0EAE008E0C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0852D51229E0EAB008E0C4B /* MLStackControllerDemo */;
+			targetProxy = D0852D66229E0EAE008E0C4B /* PBXContainerItemProxy */;
+		};
+		D0852D72229E0EAE008E0C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0852D51229E0EAB008E0C4B /* MLStackControllerDemo */;
+			targetProxy = D0852D71229E0EAE008E0C4B /* PBXContainerItemProxy */;
+		};
+		D0852D83229E0ED7008E0C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3549BB201DA389CD00C63030 /* MLStackController-iOS */;
+			targetProxy = D0852D82229E0ED7008E0C4B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0852D58229E0EAC008E0C4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0852D59229E0EAC008E0C4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0852D5D229E0EAE008E0C4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0852D5E229E0EAE008E0C4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3549BB0B1DA387DB00C63030 /* Debug */ = {
@@ -514,7 +786,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 25RYDD756Z;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -534,7 +808,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 25RYDD756Z;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -584,6 +860,155 @@
 			};
 			name = Release;
 		};
+		D0852D78229E0EAE008E0C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25RYDD756Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MLStackControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLStackControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0852D79229E0EAE008E0C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25RYDD756Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MLStackControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLStackControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0852D7B229E0EAE008E0C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25RYDD756Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MLStackControllerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLStackControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLStackControllerDemo.app/MLStackControllerDemo";
+			};
+			name = Debug;
+		};
+		D0852D7C229E0EAE008E0C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25RYDD756Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MLStackControllerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLStackControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLStackControllerDemo.app/MLStackControllerDemo";
+			};
+			name = Release;
+		};
+		D0852D7E229E0EAE008E0C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25RYDD756Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MLStackControllerDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLStackControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MLStackControllerDemo;
+			};
+			name = Debug;
+		};
+		D0852D7F229E0EAE008E0C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25RYDD756Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MLStackControllerDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.micheltlutz.MLStackControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MLStackControllerDemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -610,6 +1035,33 @@
 			buildConfigurations = (
 				3549BB6A1DA38ADB00C63030 /* Debug */,
 				3549BB6B1DA38ADB00C63030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0852D77229E0EAE008E0C4B /* Build configuration list for PBXNativeTarget "MLStackControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0852D78229E0EAE008E0C4B /* Debug */,
+				D0852D79229E0EAE008E0C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0852D7A229E0EAE008E0C4B /* Build configuration list for PBXNativeTarget "MLStackControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0852D7B229E0EAE008E0C4B /* Debug */,
+				D0852D7C229E0EAE008E0C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0852D7D229E0EAE008E0C4B /* Build configuration list for PBXNativeTarget "MLStackControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0852D7E229E0EAE008E0C4B /* Debug */,
+				D0852D7F229E0EAE008E0C4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
