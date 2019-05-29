@@ -10,7 +10,6 @@ import UIKit
 
 final class MLStackPresentingAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        
         guard let presentedViewController = transitionContext.viewController(forKey: .to) else { return }
         
         let containerView = transitionContext.containerView
@@ -30,7 +29,6 @@ final class MLStackPresentingAnimationController: NSObject, UIViewControllerAnim
                 presentedViewController.view.frame = finalFrameForPresentedView
         }, completion: { finished in
             transitionContext.completeTransition(finished)
-            presentedViewController.view.layoutIfNeeded()
         })
     }
     

@@ -30,7 +30,6 @@ final class MLStackDismissingAnimationController: NSObject, UIViewControllerAnim
                 presentedViewController.view.frame = offscreenFrame
         }) { finished in
             transitionContext.completeTransition(finished)
-            presentedViewController.view.layoutIfNeeded()
         }
     }
     

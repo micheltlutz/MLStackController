@@ -35,6 +35,7 @@
 		D0852D75229E0EAE008E0C4B /* MLStackControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D74229E0EAE008E0C4B /* MLStackControllerDemoUITests.swift */; };
 		D0852D80229E0ED7008E0C4B /* MLStackController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* MLStackController.framework */; };
 		D0852D81229E0ED7008E0C4B /* MLStackController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* MLStackController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0852D86229E905E008E0C4B /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0852D85229E905E008E0C4B /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		D0852D70229E0EAE008E0C4B /* MLStackControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLStackControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0852D74229E0EAE008E0C4B /* MLStackControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLStackControllerDemoUITests.swift; sourceTree = "<group>"; };
 		D0852D76229E0EAE008E0C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0852D85229E905E008E0C4B /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +334,7 @@
 				D0852D5B229E0EAE008E0C4B /* Assets.xcassets */,
 				D0852D5D229E0EAE008E0C4B /* LaunchScreen.storyboard */,
 				D0852D60229E0EAE008E0C4B /* Info.plist */,
+				D0852D85229E905E008E0C4B /* AppManager.swift */,
 			);
 			path = MLStackControllerDemo;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0852D86229E905E008E0C4B /* AppManager.swift in Sources */,
 				D0852D57229E0EAC008E0C4B /* ViewController.swift in Sources */,
 				D0852D55229E0EAC008E0C4B /* AppDelegate.swift in Sources */,
 			);
