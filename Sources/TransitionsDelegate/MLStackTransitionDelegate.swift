@@ -38,4 +38,12 @@ public final class MLStackTransitionDelegate: NSObject, UIViewControllerTransiti
         controller.stackDelegate = self.stackDelegate
         return controller
     }
+    
+    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return MLStackPresentingAnimationController()
+    }
+    
+    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return MLStackDismissingAnimationController()
+    }
 }

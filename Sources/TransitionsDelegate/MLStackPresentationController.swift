@@ -493,7 +493,7 @@ extension MLStackPresentationController {
             view.leftAnchor.constraint(equalTo: superView.leftAnchor),
             view.rightAnchor.constraint(equalTo: superView.rightAnchor),
             view.bottomAnchor.constraint(equalTo: superView.bottomAnchor)
-            ])
+        ])
     }
     
     private func addCornerRadiusAnimation(for view: UIView?, cornerRadius: CGFloat, duration: CFTimeInterval) {
