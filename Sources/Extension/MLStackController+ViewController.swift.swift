@@ -9,13 +9,13 @@
 import UIKit
 
 extension UIViewController {
-    public var isPresentedAsStork: Bool {
+    public var isPresentedAsStack: Bool {
         return transitioningDelegate is MLStackTransitionDelegate
             && modalPresentationStyle == .custom
             && presentingViewController != nil
     }
     
-    public func presentAsStork(_ controller: UIViewController, height: CGFloat? = nil) {
+    public func presentAsStack(_ controller: UIViewController, height: CGFloat? = nil) {
         let transitionDelegate = MLStackTransitionDelegate()
         transitionDelegate.customHeight = height
         controller.transitioningDelegate = transitionDelegate
@@ -24,7 +24,7 @@ extension UIViewController {
         self.present(controller, animated: true, completion: nil)
     }
     
-    public func presentAsStork(_ controller: UIViewController, height: CGFloat?, showIndicator: Bool, showCloseButton: Bool, complection: (() -> Void)? = nil) {
+    public func presentAsStack(_ controller: UIViewController, height: CGFloat?, showIndicator: Bool, showCloseButton: Bool, complection: (() -> Void)? = nil) {
         let transitionDelegate = MLStackTransitionDelegate()
         transitionDelegate.customHeight = height
         transitionDelegate.showCloseButton = showCloseButton

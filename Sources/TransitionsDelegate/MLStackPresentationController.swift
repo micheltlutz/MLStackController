@@ -20,7 +20,7 @@ class MLStackPresentationController: UIPresentationController, UIGestureRecogniz
     var hapticMoments: [MLStackHapticMoments] = [.willDismissIfRelease]
     
     var transitioningDelegate: MLStackTransitionDelegate?
-    weak var storkDelegate: MLStackControllerDelegate?
+    weak var stackDelegate: MLStackControllerDelegate?
     
     var pan: UIPanGestureRecognizer?
     var tap: UITapGestureRecognizer?
@@ -106,7 +106,7 @@ class MLStackPresentationController: UIPresentationController, UIGestureRecogniz
         }
         self.updateLayoutCloseButton()
         
-        let initialFrame: CGRect = presentingViewController.isPresentedAsStork ? presentingViewController.view.frame : containerView.bounds
+        let initialFrame: CGRect = presentingViewController.isPresentedAsStack ? presentingViewController.view.frame : containerView.bounds
         
         containerView.insertSubview(self.snapshotViewContainer, belowSubview: presentedViewController.view)
         self.snapshotViewContainer.frame = initialFrame
@@ -140,7 +140,7 @@ class MLStackPresentationController: UIPresentationController, UIGestureRecogniz
         var rootSnapshotView: UIView?
         var rootSnapshotRoundedView: UIView?
         
-        if presentingViewController.isPresentedAsStork {
+        if presentingViewController.isPresentedAsStack {
             guard let rootController = presentingViewController.presentingViewController, let snapshotView = rootController.view.snapshotView(afterScreenUpdates: false) else { return }
             
             containerView.insertSubview(snapshotView, aboveSubview: self.backgroundView)
@@ -206,7 +206,7 @@ class MLStackPresentationController: UIPresentationController, UIGestureRecogniz
         self.presentingViewController.view.endEditing(true)
         self.presentedViewController.view.endEditing(true)
         self.presentedViewController.dismiss(animated: true, completion: {
-            self.storkDelegate?.didDismissStorkByTap?()
+            self.stackDelegate?.didDismissStackByTap?()
         })
     }
     
@@ -215,7 +215,7 @@ class MLStackPresentationController: UIPresentationController, UIGestureRecogniz
         guard let containerView = containerView else { return }
         self.startDismissing = true
         
-        let initialFrame: CGRect = presentingViewController.isPresentedAsStork ? presentingViewController.view.frame : containerView.bounds
+        let initialFrame: CGRect = presentingViewController.isPresentedAsStack ? presentingViewController.view.frame : containerView.bounds
         
         let initialTransform = CGAffineTransform.identity
             .translatedBy(x: 0, y: -initialFrame.origin.y)
@@ -231,7 +231,7 @@ class MLStackPresentationController: UIPresentationController, UIGestureRecogniz
         self.snapshotViewContainer.frame = initialFrame
         self.snapshotViewContainer.transform = initialTransform
         
-        let finalCornerRadius = presentingViewController.isPresentedAsStork ? self.cornerRadius : 0
+        let finalCornerRadius = presentingViewController.isPresentedAsStack ? self.cornerRadius : 0
         let finalTransform: CGAffineTransform = .identity
         
         self.addCornerRadiusAnimation(for: self.snapshotView, cornerRadius: finalCornerRadius, duration: 0.6)
@@ -239,7 +239,7 @@ class MLStackPresentationController: UIPresentationController, UIGestureRecogniz
         var rootSnapshotView: UIView?
         var rootSnapshotRoundedView: UIView?
         
-        if presentingViewController.isPresentedAsStork {
+        if presentingViewController.isPresentedAsStack {
             guard let rootController = presentingViewController.presentingViewController, let snapshotView = rootController.view.snapshotView(afterScreenUpdates: false) else { return }
             
             containerView.insertSubview(snapshotView, aboveSubview: backgroundView)
@@ -316,7 +316,7 @@ extension MLStackPresentationController {
             let translation = gestureRecognizer.translation(in: presentedView).y
             if translation >= self.translateForDismiss {
                 self.presentedViewController.dismiss(animated: true, completion: {
-                    self.storkDelegate?.didDismissStorkBySwipe?()
+                    self.stackDelegate?.didDismissStackBySwipe?()
                 })
             } else {
                 self.indicatorView.style = .arrow

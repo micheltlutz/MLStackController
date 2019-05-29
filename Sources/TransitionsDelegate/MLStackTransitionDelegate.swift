@@ -35,7 +35,7 @@ public final class MLStackTransitionDelegate: NSObject, UIViewControllerTransiti
         controller.cornerRadius = self.cornerRadius
         controller.hapticMoments = self.hapticMoments
         controller.transitioningDelegate = self
-        controller.storkDelegate = self.stackDelegate
+        controller.stackDelegate = self.stackDelegate
         return controller
     }
 }
