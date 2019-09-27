@@ -12,7 +12,7 @@ import PackageDescription
 let package = Package(
     name: "MLStackController",
     platforms: [
-        .iOS(.v8)        
+        .iOS(.v11)        
     ],
     products: [
         .library(

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MLStackController'
-  s.version = '1.0.1'
+  s.version = '1.0.3'
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.summary = 'Create Stack Controller like a Music, Reminders, Podcast Apps'
   s.homepage = 'http://micheltlutz.me'
