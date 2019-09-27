@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name = 'MLStackController'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.summary = 'Create Stack Controller like a Music, Reminders, Podcast Apps'
   s.homepage = 'http://micheltlutz.me'
   s.social_media_url = 'https://twitter.com/michel_lutz'
   s.authors = { "Michel Lutz" => "michel_lutz@icloud.com" }
   s.source = { :git => "https://github.com/micheltlutz/MLStackController.git", :tag  => "v"+s.version.to_s }
-  s.platforms = { :ios => "10.0" }
+  s.platforms = { :ios => "11.0" }
   s.requires_arc = true
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.4.0'

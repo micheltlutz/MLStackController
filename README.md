@@ -10,7 +10,7 @@
 [![Travis](https://img.shields.io/travis/micheltlutz/MLStackController/master.svg)](https://travis-ci.org/micheltlutz/MLStackController/branches)
 [![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
 
-Create Stack Controller like a Music, Reminders, Podcast Apps
+Create Stack Controller like a Music, Reminders, Podcast Apps, when iOS 13 Support is not possible.
 
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -41,7 +41,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'MLStackController', '~> 1.0.0'
+pod 'MLStackController', '~> 1.0.1'
 ```
 
 Then, run the following command:
@@ -67,7 +67,7 @@ $ brew install carthage
 To integrate MLStackController into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLStackController" ~> 1.0.0
+github "micheltlutz/MLStackController" ~> 1.0.1
 ```
 
 </details>
@@ -85,7 +85,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLStackController",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLStackController.git", .upToNextMajor(from: "1.0.0"))
+        .package(url: "https://github.com/micheltlutz/MLStackController.git", .upToNextMajor(from: "1.0.1"))
     ],
     targets: [
         .target(name: "HelloMLStackController", dependencies: ["MLStackController"])
@@ -147,6 +147,48 @@ $ git submodule update --init --recursive
 </p></details>
 
 ## Usage
+
+```swift
+import UIKit
+import MLStackController
+
+class ViewController: UIViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+     var presentControllerButton = UIButton.init(type: UIButton.ButtonType.system)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        self.view.backgroundColor = UIColor.white
+        self.presentControllerButton.setTitle("Show ViewController", for: .normal)
+        self.presentControllerButton.addTarget(self, action: #selector(self.openStack), for: .touchUpInside)
+        self.presentControllerButton.sizeToFit()
+        self.presentControllerButton.center.x = self.view.frame.width  / 2
+        self.presentControllerButton.center.y = self.view.frame.height / 4 * 3
+        self.view.addSubview(self.presentControllerButton)
+    }
+    
+    @objc func openStack(_ sender: UIButton) {
+        let controller = UIViewController()
+        controller.view.backgroundColor = .white
+        self.presentAsStack(controller)
+    }
+    
+    @objc func openStackCustom(_ sender: UIButton) {
+        let controller = UIViewController()
+        controller.view.backgroundColor = .white
+        let transitionDelegate = MLStackTransitionDelegate()
+        controller.transitioningDelegate = transitionDelegate
+        controller.modalPresentationStyle = .custom
+        controller.modalPresentationCapturesStatusBarAppearance = true
+        self.present(controller, animated: true, completion: nil)
+    }
+}
+```
+
 
 ## Contributing
 
