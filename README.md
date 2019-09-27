@@ -38,10 +38,10 @@ To integrate MLStackController into your Xcode project using CocoaPods, specify 
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '11.0'
 use_frameworks!
 
-pod 'MLStackController', '~> 1.0.1'
+pod 'MLStackController', '~> 1.0.2'
 ```
 
 Then, run the following command:
@@ -67,7 +67,7 @@ $ brew install carthage
 To integrate MLStackController into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "micheltlutz/MLStackController" ~> 1.0.1
+github "micheltlutz/MLStackController" ~> 1.0.2
 ```
 
 </details>
@@ -85,7 +85,7 @@ import PackageDescription
 let package = Package(
     name: "HelloMLStackController",
     dependencies: [
-        .package(url: "https://github.com/micheltlutz/MLStackController.git", .upToNextMajor(from: "1.0.1"))
+        .package(url: "https://github.com/micheltlutz/MLStackController.git", .upToNextMajor(from: "1.0.2"))
     ],
     targets: [
         .target(name: "HelloMLStackController", dependencies: ["MLStackController"])
